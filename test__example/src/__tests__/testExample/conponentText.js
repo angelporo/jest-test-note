@@ -233,7 +233,7 @@ describe('test ContainsAnyMatchingElements', () => {
 
   it('test someWhere', () => {
     const wrapper = shallow(<MyComponent.Foo />)
-    expect(wrapper.find('.foo').someWhere(n => n.hasClass('qoo'))).toBe(false)
+    expect(wrapper.find('.foo').someWhere(n => n.hasClass('qoo'))).toBe(true)
   })
 
   it('test state', () => {
@@ -261,6 +261,14 @@ describe('test ContainsAnyMatchingElements', () => {
     console.log(wrapper.type())
   })
 
+})
+
+
+
+
+
+
+describe('test jest', () => {
   const applyToAllFlavors = (string) => {
     return 'hah'
   }
@@ -279,7 +287,7 @@ describe('test ContainsAnyMatchingElements', () => {
 
 
   it('does not lead to errors', () => {
-    expect(fetchNewFlavorIdea()).toBeFalsy(0);
+    expect(fetchNewFlavorIdea()).toBeFalsy();
   });
 
   const test = () => {
@@ -352,15 +360,16 @@ describe('test ContainsAnyMatchingElements', () => {
       },
       bedrooms: 4
     }
-
     const desiredHouse = {
       bath: true,
       kitchen: {
         amenities: ['oven', 'stove', 'washer'],
+        area: 20,
         wallColor: 'white'
       }
     }
-    expect(houseForSale).toMatchObject(desiredHouse);
+
+    //expect(houseForSale).toMatchObject(desiredHouse)
   })
 
   it('test toThrow', () => {
@@ -376,3 +385,9 @@ describe('test ContainsAnyMatchingElements', () => {
 
 })
 
+describe('test jest.fn()', () => {
+  let mockFn = jest.fn();
+  let a = new mockFn();
+  let b = new mockFn();
+  mockFn.mock.instances[0] === a;
+})
