@@ -1,0 +1,58 @@
+{
+    "name": "strongroot",
+    "version": "0.0.1",
+    "description": "Frontend core logic.",
+    "main": "app.js",
+    "repository": {
+        "url": "git@123.56.77.97:Yihuan/strongroot.git",
+        "type": "git"
+    },
+    "author": "yuffiy <yfhj1990@hotmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "bash scripts/start",
+        "test": "bash scripts/test",
+        "dev": "bash scripts/dev"
+    },
+    "dependencies": {
+        "react": "latest",
+        "react-dom": "latest",
+        "react-redux": "latest",
+        "react-router": "latest",
+        "react-router-redux": "latest",
+        "redux": "latest",
+        "redux-auth-wrapper": "latest",
+        "redux-thunk": "^2.1.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.20.0",
+        "babel-jest": "^17.0.2",
+        "babel-loader": "^6.2.9",
+        "babel-preset-latest": "^6.16.0",
+        "babel-preset-react": "^6.16.0",
+        "css-loader": "^0.26.1",
+        "enzyme": "^2.6.0",
+        "extract-text-webpack-plugin": "2.0.0-beta.4",
+        "html-webpack-plugin": "^2.24.1",
+        "html-webpack-template": "^5.5.0",
+        "jest": "^17.0.3",
+        "nock": "^9.0.2",
+        "postcss-loader": "^1.2.0",
+        "postcss-short": "^3.0.0",
+        "react-addons-test-utils": "^15.4.1",
+        "redux-devtools": "^3.3.1",
+        "redux-devtools-dock-monitor": "^1.1.1",
+        "redux-devtools-log-monitor": "^1.1.1",
+        "redux-logger": "^2.7.4",
+        "redux-mock-store": "^1.2.1",
+        "redux-test-reducer": "^0.1.0",
+        "style-loader": "^0.13.1",
+        "webpack": "2.1.0-beta.27",
+        "webpack-bundle-analyzer": "^2.1.1",
+        "webpack-dashboard": "^0.2.0",
+        "webpack-dev-server": "latest"
+    },
+    "jest": {
+        "rootDir": "src"
+    }
+}

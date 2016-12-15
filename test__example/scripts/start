@@ -1,0 +1,16 @@
+#! /bin/bash
+# -*- mode: shell -*-
+# -*- coding: utf-8 -*-
+
+# NODE envirment.
+export NODE_ENV=development
+
+# Webpack DevServer bin path.
+bin="./node_modules/.bin/webpack-dev-server"
+
+# Main.
+function main-() {
+    $bin
+}
+
+main-
